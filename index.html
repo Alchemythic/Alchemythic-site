@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +6,25 @@
   <title>Alchemythic</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: sans-serif; background: #000; color: white; overflow-x: hidden; }
-    section { width: 100%; height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; background-size: cover; background-position: center; }
-    .centered { text-align: center; max-width: 90%; }
-    .title-logo { max-width: 500px; width: 80%; margin: 0 auto; }
+    html, body { width: 100%; height: 100%; font-family: sans-serif; background: #000; color: white; overflow-x: hidden; }
+    section {
+      width: 100%;
+      min-height: 100vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .title-logo {
+      max-width: 500px;
+      width: 80%;
+    }
     .learn-btn {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 24px;
       padding: 12px 24px;
       background: linear-gradient(to right, #00ffc3, #5bff00);
       color: black;
@@ -21,9 +32,30 @@
       border: none;
       border-radius: 24px;
       text-decoration: none;
+      transition: background 0.3s ease;
     }
-    .section-img { max-width: 100%; height: auto; }
-    .social-icons a { margin: 0 10px; color: white; font-size: 24px; text-decoration: none; }
+    .learn-btn:hover {
+      background: linear-gradient(to right, #5bff00, #00ffc3);
+    }
+    .content-box {
+      max-width: 800px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      font-size: 24px;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #aaa;
+      background-color: #000;
+    }
   </style>
 </head>
 <body>
@@ -36,7 +68,7 @@
 
   <!-- Experience Section -->
   <section id="experience" style="background-image: url('2.png');">
-    <div class="centered">
+    <div class="content-box">
       <p>It’s time to awaken the deity within you. The power of human connection is greater than any evil forces and it is time to take back our reality and create the existence we all deserve to experience.</p>
     </div>
   </section>
@@ -52,17 +84,21 @@
 
   <!-- Contact Section -->
   <section style="background-image: url('6.png'); flex-direction: column;">
-    <div class="centered">
+    <div class="content-box">
       <h2>Email</h2>
       <p>alchemythicmusic@gmail.com</p>
       <h2>Social</h2>
       <div class="social-icons">
-        <a href="https://facebook.com" target="_blank">&#x1F4F7;</a>
+        <a href="https://facebook.com" target="_blank">📷</a>
         <a href="https://x.com" target="_blank">X</a>
-        <a href="https://instagram.com" target="_blank">&#x1F4F8;</a>
+        <a href="https://instagram.com" target="_blank">📸</a>
       </div>
     </div>
   </section>
+
+  <footer>
+    Coded with command-line sorcery by a bashful companion. 🧙‍♂️🌀
+  </footer>
 
 </body>
 </html>
